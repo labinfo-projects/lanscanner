@@ -1,4 +1,3 @@
-//     println!("\nLAN SCANNER (c)Giorgio Ruffa 2026\n\nAvvio scansione sulla rete {}...", args.cidr);
 use clap::Parser;
 use dns_lookup::lookup_addr;
 use indicatif::{ProgressBar, ProgressStyle};
@@ -12,7 +11,7 @@ const PORTS_TO_CHECK: &[u16] = &[22, 80, 135, 445];
 #[derive(Parser, Debug)]
 #[command(
     name = "lan_scanner",
-    author = "Giorgio Ruffa", // Aggiornato con il tuo nome
+    author = "Giorgio Ruffa",
     version = "1.0.0",
     about = "Uno scanner di rete locale con fingerprinting OS e DNS\n(c)Giorgio Ruffa 2026"
 )]
